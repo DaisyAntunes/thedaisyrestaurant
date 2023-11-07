@@ -1,0 +1,98 @@
+<!-- Essa é a tela que mostra o cardápio -->
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+
+        <!-- Aqui defino que a página terá o utf-8 para ajustar as pontuações -->
+        <meta charset="utf-8">
+
+        <!-- Aqui importo uma parte do bootstrap, o arquivo css que comanda a page e as fontes do Google que usamos para algumas palavras e frases-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
+
+        <title>Daisy's Restaurant</title>
+    </head>
+
+    <body>
+        <div style="height: 400px;">
+
+            <!-- Esse aqui é o menu com as opções das páginas utilziando elemento NAV com as classes do Bootstrap, tem no manual então apenas copiei a maioria e fui ajustando algumas coisas no css-->
+            <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <div class="title">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index/index.html">Daisy's Restaurant</a>
+                        </li>
+                      </div>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../menu/menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact/contact.html">Fale Conosco</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../booking/booking.html">Reservar</a>
+                        </li>
+                    </ul>
+                  </div>
+            </nav>
+
+            <!-- Aqui temos a imagem de fundo da tela do cardápio, escureci ela no css, usei z-index para deixar ela atrás do NAVBAR e joguei ela pra cima com o top negativo no css -->
+            <div class="img_menu_navbar">
+                <img src="../imgs/menu.jpg" class="menu_img">
+            </div>
+
+            <!-- o texto abaixo fica em cima da imagem de fundo, usei css para subir o texto em cima da imagem, mudar a fonte dele para uma do google e eu usei classes do botstrap para centralizar esse texto na tela-->
+            <div class="cardapio_title d-flex justify-content-center">
+                Nosso Cardápio
+            </div>
+        </div>
+
+        <!-- abaixo eu usei um conjunto de cards do boostrap para fazer as opções do cardápio, as imagens estão todas na pasta imgs-->
+        <div class="d-flex d-flex-row justify-content-center" style="width: 100%;margin-bottom: 50px;">
+            <div class="card" style="width: 18rem;margin-right: 40px;">
+                <img class="card-img-top img_menu" src="../imgs/dish_1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p><strong>Salada Da Casa</strong></p>
+                  <p class="card-text">Uma deliciosa salada com ingredientes mediterrâneos que vai deixar seu dia muito mais feliz.</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;margin-right: 40px;">
+                <img class="card-img-top img_menu" src="../imgs/dish_2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p><strong>Salada Tropical</strong></p>
+                  <p class="card-text">A famosa salada que acompanha o nosso PF do dia a dia, com ingredientes tropicais e um tempero MARAVILHOSO.</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;margin-right: 40px;">
+                <img class="card-img-top img_menu" src="../imgs/dish_3.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p><strong>Lasanha de Ovo</strong></p>
+                  <p class="card-text">Você já experimentou lasanhas de vários sabores, mas dúvido que já experimentou Lasanha de Ovo, essa é a nossa especialidade!</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top img_menu" src="../imgs/dish_4.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p><strong>Massa Queijuda</strong></p>
+                  <p class="card-text">A melhor massa do Brasil está aqui no The Daisy, o queijo mais fresco de todos e ingredientes inesquecíveis.</p>
+                </div>
+              </div>
+        </div>
+
+        <!--importei os links do boostrap-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

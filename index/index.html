@@ -1,0 +1,122 @@
+<!-- Essa aqui é a tela inicial -->
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <!-- Aqui defino que a página terá o utf-8 para ajustar as pontuações -->
+        <meta charset="utf-8">
+
+        <!-- Aqui importo uma parte do bootstrap, o arquivo css que comanda a page e as fontes do Google que usamos para algumas palavras e frases-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
+
+        <title>Daisy's Restaurant</title>
+    </head>
+
+    <body>
+        <div class="menu">
+            <!-- Esse aqui é o menu com as opções das páginas utilziando elemento NAV com as classes do Bootstrap, tem no manual então apenas copiei a maioria e fui ajustando alfumas coisas no css-->
+            <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <div class="title">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index/index.html">Daisy's Restaurant</a>
+                        </li>
+                      </div>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../menu/menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact/contact.html">Fale Conosco</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../booking/booking.html">Reservar</a>
+                        </li>
+                    </ul>
+                  </div>
+            </nav>
+
+            <!-- Aqui temos a imagem de fundo da tela inicial, escureci ela no css, usei z-index para deixar ela atrás do NAVBAR e joguei ela pra cima com o top negativo no css -->
+            <div class="img_menu_navbar">
+                <img src="../imgs/image_menu_first.jpg" class="menu_img">
+            </div>
+
+            <!-- os textos abaixo ficam todos em cima da imagem de fundo e eu usei classes do botstrap para centralizar esses textos na tela-->
+            <div class="convite d-flex justify-content-center">
+                <h1>Seja Bem-Vindo</h1>
+            </div>
+
+            <div class="divider d-flex justify-content-center">
+                <img src="../imgs/divider.webp">
+            </div>
+
+            <div class="convite_title d-flex justify-content-center">
+                <h1>THE DAISY</h1>
+            </div>
+
+            <!-- Abaixo temos a imagem da seta para baixo que chama uma função do javascript que faz com que quando o usuário clique, ele vá para o final da tela-->
+            <div class="position_seta d-flex justify-content-center">
+                <a onclick="down()">
+                    <div class="icone_seta_baixo d-flex justify-content-center"> 
+                        <div style="margin-top: 7px;">
+                            <img src="../imgs/seta_down.png" class="img_seta_down">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!--Abaixo tenho uma div que pega 100% de largura, dividida por duas divs 50%, em uma tem um texto da história do restaurante e na outra uma imagem do restaurante-->
+        <div class="about_us d-flex flex-row">
+            <div class="d-flex justify-content-center flex-column" style="width: 50%;">
+                <div class="text_title_about_us" style="width: 100%;text-align: center;">
+                    <h1>Uma linda história</h1>
+                </div>
+
+                <div class="text_subtitle_about_us" style="width: 100%;text-align: center;">
+                    <h3>Quem somos?</h3>
+                </div>
+
+                <div class="text_about_us d-flex justify-content-center" style="width: 100%;">
+                    <div style="width: 80%;text-align: center;">
+                        <p>O restaurante The Daisy foi inaugurado em <strong>1984</strong>, ele nasceu juntamente com a menina mais linda desse mundo,
+                            hoje mãe de 4 filhos, Daisy administra, junto com o seu marido, um dos maiores restaurantes do Brasil! Foi difícil no início,
+                        mas a força de vontade é uma das maiores qualidades da família Bomfim, venha conhecer os nossos pratos e aproveitar o incrível e acolhedor
+                    ambiente que proporcionamos. Estamos te esperando!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center flex-row" style="width: 50%;">
+                <div style="width: 100%;">
+                    <img src="../imgs/fachada.jpg" class="image_fachada">
+                </div>
+            </div>
+        </div>
+
+        <!--Abaixo fiz meio que um rodapé em uma div colocando fundo preto e colcoando um convite para o instagram, novamente utilizei classes do bootstrap para centralizar ops textos-->
+        <div style="background-color: black;width: 100%;margin-top: 60px;padding-bottom: 25px;">
+            <div class="convite_insta d-flex justify-content-center">
+                <h2>Visite nosso Instagram</h2>
+            </div>
+
+            <div class="insta d-flex justify-content-center">
+                <h2>@thedaisyrestaurant</h2>
+            </div>
+        </div>
+
+        <!--importei os links do boostrap-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <!--importei o javascript-->
+        <script src="index.js"></script>
+    </body>
+</html>

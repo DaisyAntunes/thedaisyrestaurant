@@ -1,0 +1,82 @@
+<!-- Essa é a tela em que o usuário consegue mandar informações para entrarmos em contato -->
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <!-- o head é igual as outras e já foi comentado lá em index e menu -->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
+
+        <title>Daisy's Restaurant</title>
+    </head>
+
+    <body>
+        <div>
+            <!-- navbar com as opções das outras pages, também já comentado em index e menu-->
+            <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <div class="title">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index/index.html">Daisy's Restaurant</a>
+                        </li>
+                      </div>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../menu/menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact/contact.html">Fale Conosco</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../booking/booking.html">Reservar</a>
+                        </li>
+                    </ul>
+                  </div>
+            </nav>
+
+            <!-- imagem de fundo seguindo o mesmo estilo das outras pages-->
+            <div class="img_menu_navbar">
+                <img src="../imgs/booking.jpg" class="menu_img">
+            </div>
+
+            <!-- abaixo usei o form do html padrão com classes do bootstrap para ficar mais bonito para o usuário, modifiquei também algumas propriedades do css para mudar a cor de fundo do card envolta do formuário e sua posição-->
+            <div class="d-flex justify-content-center contact">
+                <div class="card shadowcontact">
+                    <!-- nessa forms temos dois campos um do tipo email e outro do tipo texto de área longa, os dois são obrigatórios "required"-->
+                    <!-- as classes do forms foram copiadas do manual do boostrap, então não tem muito o que explicar, eles tem muitos exemplos de forms com o código fonte lá-->
+                    <div class="card-body">
+                        <h5 style="text-align: center;color: bisque;" class="card-title title_card">Entre em contato com o THE DAISY</h5>
+                        <h6 style="text-align: center;" class="card-subtitle mb-2 text-muted">Te responderemos assim que possível!</h6>
+                        
+                        <!--na tag form temos a chamada para a função do onsubmit que pega as informações dos campos quando o usuário clica no botão no final-->
+                        <form onsubmit="getInformacoes()">
+                            <div class="form-group">
+                              <label for="emailduvida" style="color: bisque;">Qual o seu e-mail?</label>
+                              <input type="email" class="form-control" id="emailduvida" placeholder="email@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="duvidatext" style="color: bisque;">Qual a sua dúvida?</label>
+                              <textarea class="form-control" id="duvidatext" rows="10" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-light btn-lg btn-block font_button">Enviar minha dúvida</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!--imports também já explicados em menu e index-->
+        <script type="text/javascript" src="contact.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
