@@ -1,3 +1,6 @@
+/*As duas classes abaixo servem para ajustar a imagem de fundo do menu da página, o filter é para deixara a imagem mais escura,
+o box-shadow cria uma sombra atrás da imagem, o width é alargura e o height é a altura da imagem
+position relative junto com o top negativo coloca a imagem no topo da tela e o z-index coloca ela atrás do menu*/
 .menu_img {
     width: 100%;
     height: 410px;
@@ -11,12 +14,15 @@
     z-index: -1;
 }
 
+/*title é a classe que ajuste o título da página (The Daisy's Resturant), colocando a fonte importada do Google e ajustando o tamanhp da fonte para large*/
 .title{
     margin-right: 430px;
     font-size: x-large;
     font-family: "Caveat", sans-serif;
 }
 
+/* as classes abaixo ajustam o formulário da página, ajustando a posição da DIV, a cor de fundo do formulário (background-color),
+a sombra atrás do formulário (box-shadow), o título do formulário na classe title_card, e a fonte do botão final do formulário*/
 .contact {
     position: relative;
     top: -350px;

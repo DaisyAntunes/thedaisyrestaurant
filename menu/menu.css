@@ -1,23 +1,12 @@
+/*As três classes abaixo servem para ajustar a imagem de fundo do menu da página, a largura e a altura do menu, 
+o filter é para deixara a imagem mais escura,
+o width é a largura e o height é a altura da imagem
+position relative junto com o top negativo coloca a imagem no topo da tela e o z-index coloca ela atrás do menu*/
 .menu_img {
     width: 100%;
     height: 400px;
     filter: brightness(60%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.title{
-    margin-right: 430px;
-    font-size: x-large;
-    font-family: "Caveat", sans-serif;
-}
-
-.cardapio_title {
-    z-index: -1;
-    position: relative;
-    top: -225px;
-    color: rgb(6, 6, 5);
-    font-family: "Caveat", sans-serif;
-    font-size: 80px;
 }
 
 .img_menu_navbar {
@@ -28,4 +17,21 @@
 
 .img_menu {
     height: 250px;
+}
+
+/*title é a classe que ajuste o título da página (The Daisy's Resturant), colocando a fonte importada do Google e ajustando o tamanhp da fonte para large*/
+.title{
+    margin-right: 430px;
+    font-size: x-large;
+    font-family: "Caveat", sans-serif;
+}
+
+/*classe que ajusta o texto central da página "Cardápio" , ajusta a posição desse texto, fonte e cor */
+.cardapio_title {
+    z-index: -1; /*coloca texto a frente da imagem de fundo*/
+    position: relative; /*sem ele o z-index não funciona */
+    top: -225px;
+    color: rgb(6, 6, 5); /*cor do texto */
+    font-family: "Caveat", sans-serif; /*fonte importada do Google */
+    font-size: 80px; /*tamanho do texto */
 }

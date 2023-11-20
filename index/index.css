@@ -1,3 +1,7 @@
+/*As quatro classes abaixo servem para ajustar a imagem de fundo do menu da página, a largura e a altura do menu, 
+o filter é para deixara a imagem mais escura,
+o width é a largura e o height é a altura da imagem
+position relative junto com o top negativo coloca a imagem no topo da tela e o z-index coloca ela atrás do menu*/
 .menu_img {
     width: 100%;
     height: 700px;
@@ -19,12 +23,15 @@
     top: -90px;
 }
 
+/*title é a classe que ajuste o título da página (The Daisy's Resturant), colocando a fonte importada do Google e ajustando o tamanhp da fonte para large*/
 .title{
     margin-right: 430px;
     font-size: x-large;
     font-family: "Caveat", sans-serif;
 }
 
+/* essas classes abaixo ajustam os textos que ficam acima da imagem do menu no topo da página, ajustamos a posição dos textos acima da imagem
+a cor do texto, a posição na altura da tela, fonte do texto, e a posição da imagem que divide os textos */
 .convite{
     z-index: -1;
     position: relative;
@@ -41,6 +48,14 @@
     font-family: "Caveat", sans-serif;
 }
 
+.divider {
+    z-index: -1;
+    position: relative;
+    top: -570px;
+    height: 150px;
+}
+
+/*as classes abaixo ajustam o convite para o instagram do restaurante, ajustam a cor da fonte e o estilo da fonte*/
 .convite_insta {
     padding-top: 30px;
     color: rgb(243, 243, 206);
@@ -53,13 +68,7 @@
     font-size: medium;
 }
 
-.divider {
-    z-index: -1;
-    position: relative;
-    top: -570px;
-    height: 150px;
-}
-
+/*classes que ajustam a posição da div branca que contém a seta para baixo na tela inicial*/
 .position_seta{
     top: -400px;
     position: relative;
@@ -76,18 +85,19 @@
     height: 50px;
 }
 
+/*classes que estilizam o texto "sobre nós", a div que contém esse texto juntamente com a div que tem a imagem da fachada do restaurante*/
 .about_us {
     width: 100%;
 }
 
 .text_title_about_us {
-    color: rgb(53, 16, 16);
+    color: rgb(53, 16, 16); /*color é a mudança de cor do texto */
     font-family: "Caveat", sans-serif;
 }
 
 .text_subtitle_about_us {
     color: rgb(129, 110, 110);
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif; /*muda a fonte do texto */
 }
 
 .text_about_us {
@@ -97,6 +107,6 @@
 .image_fachada {
     height: 300px;
     margin-left: 155px;
-    margin-top: 15px;
-    box-shadow: 10px 10px;
+    margin-top: 15px; /*margin+posição (top, left, right, bottom) que a margem deve estar */
+    box-shadow: 10px 10px; /*sombra da imagem*/
 }
